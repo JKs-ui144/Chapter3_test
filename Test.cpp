@@ -59,7 +59,7 @@ void ATest::move()
 		
 		float dist = distance(current, nextLot);
 		totDist += dist;
-		UE_LOG(LogTemp, Warning, TEXT("step : %d Lotcation : %f, %f"), i + 1, nextLot.X, nextLot.Y);  // TEXT( 한글로 출력하려 하면 로그 출력 안됨 )
+		UE_LOG(LogTemp, Warning, TEXT("step : %d Lotcation : %f, %f Move Distance : %f"), i + 1, nextLot.X, nextLot.Y,dist);  // TEXT( 한글로 출력하려 하면 로그 출력 안됨 )
 		previous = current;  // 현재위치를 과거위치로 설정
 		current = nextLot;   // 다음위치를 현재위치로 설정
 		createEvent();
